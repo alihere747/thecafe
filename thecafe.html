@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        let navber = document.createElement("div")
+        //    console.log(navber);
+        navber.style.height = '9vh'
+        navber.style.width = "100%"
+        // navber.style.border = "1px solid red"
+        navber.style.backgroundColor = "#000"
+        document.body.appendChild(navber)
+
+        let list = document.createElement("ul")
+        navber.appendChild(list)
+        list.style.height = "100%"
+        list.style.listStyle = "none"
+
+        var listitem = document.createElement("li")
+        list.appendChild(listitem)
+        listitem.innerHTML = "HOME"
+        listitem.style.color = "white"
+
+        var listitem = document.createElement("li")
+        list.appendChild(listitem)
+        listitem.innerHTML = "ABOUT"
+        listitem.style.color = "white"
+
+
+        var listitem = document.createElement("li")
+        list.appendChild(listitem)
+        listitem.innerHTML = "MENU"
+        listitem.style.color = "white"
+
+
+        var listitem = document.createElement("li")
+        list.appendChild(listitem)
+        listitem.innerHTML = "WHERE"
+        listitem.style.color = "white"
+
+
+        list.style.display = "flex"
+        list.style.justifyContent = "space-around"
+        list.style.alignItems = "center"
+
+        var bgimg = document.createElement("div")
+        bgimg.style.height = "80vh"
+        bgimg.style.width = "100%"
+        // bgimg.style.border = "1px solid red"
+        document.body.appendChild(bgimg)
+
+        bgimg.style.backgroundImage = "url(coffeehouse.jpg)"
+        bgimg.style.backgroundPosition = "center"
+        bgimg.style.backgroundSize = "cover"
+
+        var s1h1 = document.createElement("h1")
+        s1h1.innerHTML = "The <br> cafe"
+        s1h1.style.display = "flex"
+        s1h1.style.justifyContent = "center"
+        s1h1.style.alignItems = "center"
+        s1h1.style.color = "white"
+        s1h1.style.fontSize = "100px"
+        bgimg.appendChild(s1h1)
+
+        var caff = document.createElement("div")
+        caff.style.height = "180vh"
+        caff.style.width = "55%"
+        // caff.style.border = "1px solid blue"
+        caff.style.margin = "auto"
+        document.body.appendChild(caff)
+
+        var thecaff = document.createElement("div")
+        thecaff.style.height = "5vh"
+        thecaff.style.width = "30%"
+        thecaff.style.border = "1px solid pink"
+        thecaff.style.margin = "auto"
+        thecaff.style.marginTop = "60px"
+        thecaff.style.backgroundColor = "black"
+        caff.appendChild(thecaff)
+
+        var s2h2 = document.createElement("h2")
+        s2h2.innerHTML = "About The Caff"
+        s2h2.style.textAlign = "center"
+        s2h2.style.color = "white"
+        thecaff.appendChild(s2h2)
+
+        var para = document.createElement("p")
+        para.innerHTML = "The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et<br> dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation<br> ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        para.style.marginTop = "10%"
+        para.style.fontSize = "20px"
+        para.style.lineHeight = "35px"
+        para.style.letterSpacing = "1.5px"
+        caff.appendChild(para)
+
+        var para2 = document.createElement("p")
+        para2.innerHTML = "In addition to our full espresso and brew bar menu, we serve fresh made-to-<br>order breakfast and lunch sandwiches, as well as a selection of sides and<br> salads and other good stuff."
+        para2.style.marginTop = "6%"
+        para2.style.fontSize = "19px"
+        para2.style.lineHeight = "35px"
+        para2.style.letterSpacing = "1.9px"
+        caff.appendChild(para2)
+
+        var use = document.createElement("div")
+        use.style.height = "20vh"
+        use.style.width = "100%"
+        // use.style.border = "1px solid red"
+        use.style.marginTop = "5%"
+        use.style.backgroundColor = "#F1F1F1"
+        caff.appendChild(use)
+
+        var para3 = document.createElement("p")
+        para3.innerHTML = "Use products from nature for what it's worth - but never too early, nor<br> too late.  Fresh is the new sweet."
+        para3.style.marginTop = "10px"
+        para3.style.marginLeft = "20px"
+        para3.style.fontSize = "20px"
+        para3.style.letterSpacing = "1px"
+        para3.style.lineHeight = "25px"
+        //    para3.style.color = ""
+        use.appendChild(para3)
+
+        var para4 = document.createElement("p")
+        para4.innerHTML = "Chef, Coffeeist and Owner: Liam Brown"
+        para4.style.marginTop = "15px"
+        para4.style.marginLeft = "20px"
+        para4.style.fontSize = "18px"
+        para4.style.letterSpacing = "1px"
+        //    para4.style.lineHeight = "25px"
+        use.appendChild(para4)
+
+        var bgimg1 = document.createElement("div")
+        bgimg1.style.height = "65vh"
+        bgimg1.style.width = "100%"
+        // bgimg1.style.border = "1px solid green"
+        bgimg1.style.marginTop = "3%"
+        caff.appendChild(bgimg1)
+
+           let image = document.createElement("img")
+           image.setAttribute("src","https://www.w3schools.com/w3images/coffeeshop.jpg")
+           image.style.height = "100%"
+           image.style.width = "100%"
+           bgimg1.appendChild(image)
+
+        var oppen = document.createElement("h3")
+        oppen.innerHTML = "Opening hours:"
+        oppen.style.marginTop = "20px"
+        oppen.style.display = "inline-block"
+        caff.appendChild(oppen)
+
+        var ever = document.createElement("p")
+        ever.innerHTML = "everyday from 6am to 5pm."
+        ever.style.display = "inline-block"
+        caff.appendChild(ever)
+
+        var open = document.createElement("h3")
+        open.innerHTML = "Address:"
+        open.style.marginTop = "15px"
+        //   open.style.display = "inline-block"
+        caff.appendChild(open)
+
+        var eveer = document.createElement("p")
+        eveer.innerHTML = "<b>15 Adr street, 5015, NY</b>"
+        //   eveer.style.display = "inline-block"
+        caff.appendChild(eveer)
+
+        var the = document.createElement("div")
+        the.style.height = "5vh"
+        the.style.width = "10%"
+        // the.style.border = "1px solid black"
+        the.style.margin = "auto"
+        the.style.marginTop = "4%"
+        the.style.backgroundColor = "black"
+        document.body.appendChild(the)
+
+        var men = document.createElement("h3")
+        men.innerHTML = "THE ENU"
+        men.style.textAlign = "center"
+        men.style.marginTop = "7px"
+        men.style.color = "white"
+        the.appendChild(men)
+
+        var eat = document.createElement("div")
+        eat.style.height = "100vh"
+        eat.style.width = "55%"
+        eat.style.border = "1px solid #00000077"
+        eat.style.margin = "auto"
+        eat.style.marginTop = "3%"
+        //   eat.style.boxShadow = "2px 2px 5px 5px"
+        //   eat.style.display = "flex"
+        document.body.appendChild(eat)
+
+        var eat1 = document.createElement("div")
+        eat1.style.height = "10vh"
+        eat1.style.width = "100%"
+        eat1.style.display = "flex"
+        eat1.style.justifyContent = "center"
+        eat1.style.alignItems = "center"
+        eat1.style.border = "1px solid #00000077"
+        //   eat1.style.boxShadow = "2px 1px 4px 4px"
+        eat.appendChild(eat1)
+
+        var eat2 = document.createElement("div")
+        eat2.style.height = "6vh"
+        eat2.style.width = "46%"
+        eat2.style.backgroundColor = "#616161"
+        //   eat2.style.border = "2px solid black"
+        eat1.appendChild(eat2)
+
+        var text = document.createElement("h3")
+        text.innerHTML = "Eat"
+        text.style.textAlign = "center"
+        text.style.marginTop = "7px"
+        text.style.color = "white"
+        eat2.appendChild(text)
+
+        var eat2 = document.createElement("div")
+        eat2.style.height = "8vh"
+        eat2.style.width = "46%"
+        //   eat2.style.border = "2px solid black"
+        eat1.appendChild(eat2)
+
+        var text1 = document.createElement("h3")
+        text1.innerHTML = "Drink"
+        text1.style.textAlign = "center"
+        text1.style.marginTop = "12px"
+        eat2.appendChild(text1)
+
+        var text2 = document.createElement("h3")
+        text2.innerHTML = "Bread Basket"
+        text2.style.marginTop = "4%"
+        text2.style.marginLeft = "30px"
+        eat.appendChild(text2)
+
+        var text3 = document.createElement("p")
+        text3.innerHTML = "Assortment of fresh baked fruit breads and muffins 5.50"
+        text3.style.marginTop = "1.5%"
+        text3.style.marginLeft = "30px"
+        text3.style.fontSize = "20px"
+        text3.style.color = "#00000077"
+        eat.appendChild(text3)
+
+        var text2 = document.createElement("h3")
+        text2.innerHTML = "Honey Almond Granola with Fruits"
+        text2.style.marginTop = "8%"
+        text2.style.marginLeft = "30px"
+        eat.appendChild(text2)
+
+        var text3 = document.createElement("p")
+        text3.innerHTML = "Natural cereal of honey toasted oats, raisins, almonds and dates 7.00"
+        text3.style.marginTop = "2%"
+        text3.style.marginLeft = "30px"
+        text3.style.fontSize = "20px"
+        text3.style.color = "#00000077"
+        eat.appendChild(text3)
+
+        var text2 = document.createElement("h3")
+        text2.innerHTML = "Belgian Waffle"
+        text2.style.marginTop = "8%"
+        text2.style.marginLeft = "30px"
+        eat.appendChild(text2)
+
+        var text3 = document.createElement("p")
+        text3.innerHTML = "Vanilla flavored batter with malted flour 7.50"
+        text3.style.marginTop = "2%"
+        text3.style.marginLeft = "30px"
+        text3.style.fontSize = "20px"
+        text3.style.color = "#00000077"
+        eat.appendChild(text3)
+
+        var text2 = document.createElement("h3")
+        text2.innerHTML = "Scrambled eggs"
+        text2.style.marginTop = "8%"
+        text2.style.marginLeft = "30px"
+        eat.appendChild(text2)
+
+        var text3 = document.createElement("p")
+        text3.innerHTML = "Scrambled eggs, roasted red pepper and garlic, with green onions 7.50"
+        text3.style.marginTop = "2%"
+        text3.style.marginLeft = "30px"
+        text3.style.fontSize = "20px"
+        text3.style.color = "#00000077"
+        eat.appendChild(text3)
+
+        var text2 = document.createElement("h3")
+        text2.innerHTML = "Blueberry Pancakes"
+        text2.style.marginTop = "8%"
+        text2.style.marginLeft = "30px"
+        eat.appendChild(text2)
+
+        var text3 = document.createElement("p")
+        text3.innerHTML = "With syrup, butter and lots of berries 8.50"
+        text3.style.marginTop = "2%"
+        text3.style.marginLeft = "30px"
+        text3.style.fontSize = "20px"
+        text3.style.color = "#00000077"
+        eat.appendChild(text3)
+
+        var bgimg2 = document.createElement("div")
+        bgimg2.style.height = "65vh"
+        bgimg2.style.width = "55%"
+        bgimg2.style.margin = "auto"
+        bgimg2.style.marginTop = "4%"
+        // bgimg2.style.border = "1px solid black"
+        document.body.appendChild(bgimg2)
+
+         let image1 = document.createElement("img")
+           image1.setAttribute("src","https://www.w3schools.com/w3images/coffeehouse2.jpg")
+           image1.style.height = "100%"
+           image1.style.width = "100%"
+           bgimg2.appendChild(image1)
+
+        var fin = document.createElement("div")
+        fin.style.height = "6vh"
+        fin.style.width = "20%"
+        fin.style.border = "1px solid black"
+        fin.style.margin = "auto"
+        fin.style.marginTop = "3%"
+        fin.style.backgroundColor = "black"
+        document.body.appendChild(fin)
+
+        var text4 = document.createElement("h2")
+        text4.innerHTML = "WHERE TO FIND US"
+        text4.style.textAlign = "center"
+        text4.style.marginTop = "10px"
+        text4.style.color = "white"
+        fin.appendChild(text4)
+
+        var add = document.createElement("div")
+        add.style.height = "100vh"
+        add.style.width = "55%"
+        // add.style.border = "1px solid black"
+        add.style.margin = "auto"
+        add.style.marginTop = "5%"
+        document.body.appendChild(add)
+
+        var text5 = document.createElement("p")
+        text5.innerHTML = "Find us at some address at some place."
+        text5.style.fontSize = "20px"
+        text5.style.letterSpacing = "2px"
+        add.appendChild(text5)
+
+        var bgimg3 = document.createElement("div")
+        bgimg3.style.height = "65vh"
+        bgimg3.style.width = "100%"
+        // bgimg3.style.border = "1px solid black"
+        bgimg3.style.marginTop = "3%"
+        add.appendChild(bgimg3)
+         
+         let image3 = document.createElement("img")
+           image3.setAttribute("src","https://www.w3schools.com/w3images/map.jpg")
+           image3.style.height = "100%"
+           image3.style.width = "100%"
+           bgimg3.appendChild(image3)
+
+        var text6 = document.createElement("h3")
+        text6.innerHTML = "FYI! We offer full-service catering for any event, large or small. We<br> understand your needs and we will cater the food to satisfy the biggerst<br> criteria of them all, both look and taste."
+        text6.style.letterSpacing = "2px"
+        text6.style.lineHeight ="25px"
+        text6.style.marginTop = "3%"
+        add.appendChild(text6)
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
